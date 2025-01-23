@@ -1,0 +1,10 @@
+:root {
+  --accent-color: #373737;
+  --grey-color: #686868;
+
+  --title-main-size: 36px;
+  --subtitle-size: 30px;
+  --title-accent: 40px;
+  --text-size:16px;
+  --text-lh:24px;
+}

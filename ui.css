@@ -1,0 +1,244 @@
+@import url(_var.css);
+
+/*------------------ button ------------------*/
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: auto;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  box-sizing: border-box;
+  padding: 13px 17px;
+  border: 1px solid transparent;
+
+  transition: border .3s, background-color .3s, color .3s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+
+  transition: border .3s, background-color .3s, color .3s;
+}
+
+.btn_inverse {
+  background-color: #fff;
+  color: var(--accent-color);
+}
+
+.btn_search {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.btn_search:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/*------------------ input ------------------*/
+
+.input {
+  border-radius: 5px;
+  padding: 12px;
+  font-size: var(--text-size);
+  width: 100%;
+  box-sizing: border-box;
+  max-height: 50px;
+}
+
+.input_search {
+  background-color: #EFEFEF;
+  max-width: 270px;
+}
+
+.input::placeholder {
+  font-size: var(--text-size);
+  font-weight: lighter;
+}
+
+.input_search::placeholder {
+  font-size: 20px;
+  color: var(--grey-color);
+  line-height: 18;
+}
+
+/*------------------ sort list ------------------*/
+
+.sort_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sort_item {
+  color: var(--grey-color);
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.sort_item:hover {
+  color: #000;
+  transition: color .3s;
+}
+
+.sort_select {
+  color: #000;
+}
+
+/*------------------ social ------------------*/
+
+.social_list {
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.social_item {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_icon {
+  transition: stroke .3s, fill .3s;
+  stroke: #fff;
+}
+
+.social_icon:hover {
+  stroke: #000;
+  transition: stroke .3s, fill .3s;
+}
+
+.social_icon__twiiter {
+  fill: #fff;
+}
+
+.social_icon__twiiter:hover {
+  fill: #000;
+}
+
+/*------------------ furniture card ------------------*/
+
+.card {
+  transition: box-shadow .3s;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 20px rgba(39, 39, 43, .1);
+  transition: box-shadow .3s;
+}
+
+.card_top {
+  margin-bottom: 10px;
+}
+
+.card_content {
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card_title,
+.card_price {
+  color: var(--accent-color);
+  line-height: 30px;
+}
+
+.card_text {
+  font-weight: lighter;
+  font-size: var(--text-size);
+}
+
+.card_name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_btn {
+  width: 102px;
+  padding: 8px 10px;
+  font-size: 16px;
+}
+
+
+/*------------------ comment card ------------------*/
+
+.comment {
+  padding: 5px;
+  padding-right: 25px;
+  border-radius: 5px;
+  background: #F9F9F9;
+
+  display: flex;
+  gap: 25px;
+}
+
+.comment_photo {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.comment_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment_name {
+  color: var(--accent-color);
+  line-height: 30px;
+  display: block;
+}
+
+.comment_date {
+  font-size: var(--text-size);
+  color: #696161;
+}
+
+.comment_text {
+  font-weight: lighter;
+  font-size: var(--text-size);
+}
+
+.comment_stars {
+  display: flex;
+  gap: 10px;
+}
+
+/*------------------ next, prev btn ------------------*/
+
+.next,
+.prev {
+  background: var(--accent-color);
+  opacity: .5;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+.next:hover,
+.prev:hover {
+  background-color: #000;
+  transition: background .3s;
+}
+
+.prev {
+  transform: rotate(180deg);
+}
