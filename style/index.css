@@ -1,7 +1,5 @@
-@import url('./_var.css');
 @import url('./common.css');
 @import url('./ui.css');
-
 
 /*------------------ header ------------------*/
 
@@ -48,7 +46,7 @@
 }
 
 .title {
-  font-size: var(--title-main-size);
+  font-size: 36px;
   font-family: 'Revalia', serif;
   line-height: 50px;
 }
@@ -136,7 +134,7 @@
 
 .statistic_number {
   font-weight: bold;
-  font-size: var(--title-accent);
+  font-size: 40px;
 }
 
 .statistic_text__svg {
@@ -360,7 +358,7 @@
 
 .footer_text {
   color: #fff;
-  font-size: var(--text-size);
+  font-size: 16px;
 }
 
 .footer_links {
@@ -405,7 +403,7 @@
 .contacts_text {
   color: #fff;
   margin-left: 5px;
-  font-size: var(--text-size);
+  font-size: 16px;
 }
 
 .contacts_icon {
@@ -439,7 +437,7 @@
 
 .footer_btn {
   padding: 0 12px;
-  font-size: var(--text-size);
+  font-size: 16px;
   min-height: 50px;
 }
 
