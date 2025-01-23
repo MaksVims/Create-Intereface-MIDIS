@@ -65,3 +65,12 @@ img {
   margin-bottom: 50px;
   font-weight: 400;
 }
+
+.stop_scroll {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.modal_show {
+  display: flex !important;
+}
