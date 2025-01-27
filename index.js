@@ -17,10 +17,7 @@ function showModal($elem) {
 
 function clickObserver($elem) {
   document.body.onclick = event => {
-    console.log(event.target);
-    console.log(event.target.closest('.modal_window'))
     if (!event.target.closest('.modal_window')) {
-      console.log('!!');
       closeModal($elem)
       document.body.onclick = null
     }
@@ -37,11 +34,15 @@ Array.from($orderBtns).forEach($elem => {
 
     const orderModalBtn = document.querySelector('.order_modal_btn')
 
-    orderModalBtn.addEventListener('click', () => {
+    orderModalBtn.onclick = (e) => {
+      e.preventDefault();
       closeModal($orderModal)
       showModal($successModal)
-      setTimeout(() => closeModal($successModal), 1000)
-    })
+      setTimeout(() => {
+        orderModalBtn.onclick = null
+        closeModal($successModal)
+      }, 1000)
+    }
   })
 })
 
